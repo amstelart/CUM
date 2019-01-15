@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class="no-js page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>ЦУМ</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <header class="page-header">
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
+        <div class="container-fluid">
+            <!-- LOGO -->
+            <a class="logo navbar-brand" href="index.html">
+                <img src="img/logo.svg" width="185" height="33" alt="" class="img-fluid logo-light">
+                <img src="images/logo-dark.png" alt="" class="img-fluid logo-dark">
+            </a>
+            <button class="navbar-toggler burger collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"><span></span></button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">О магазине</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Одежда</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Для дома</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Гастраном</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="page-jobs.html" class="nav-link">Вакансии</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="page-contacts.html" class="nav-link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+  </header>
+
+
+  <main class="page-content" role="main">
+
+    <!-- Start content__wrap -->
+    <div class="page-content__wrap">
+      <div class="container">
+        <nav class="breadcrumb-wrap">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item"><a href="#">Женская одежда</a></li>
+            <li class="breadcrumb-item active">Max Mara</li>
+          </ol>
+        </nav>
+
+        <div class="row">
+          <div class="col-lg-5">
+            <img class="img-fluid rounded mb-3" src="img/brand-image-01.jpg" alt="">
+          </div>
+          <div class="col-lg-7">
+            <h1 class="d-flex justify-content-between align-items-end">Max Mara <span class="badge badge-info">2 этаж</span></h1>
+            <p>Max Mara – одна из самых успешных и влиятельных итальянских марок в индустрии
+            моды. К  созданию коллекций Max Mara приглашает выдающихся талантливых
+            дизайнеров, стараясь при этом сохранить в секрете их имена. Но известно, что над
+            коллекциями Max Mara в разное время работали знаменитые дизайнеры <b>Karl Lagerfeld,
+            Luciano Soprani, Franco Moschino, Dolce & Gabbana, Jean-Charles de Castelbajac.</b></p>
+            <p>Традиционные цвета: бежевый, серый, белый, черный, красный. Модели Max Mara
+            очень гармоничны,  изысканы и при этом довольно сдержанны. Для Max Mara
+            не характерна экспериментальность, этот бренд всегда остается верен своим
+            традициям, и на протяжении уже нескольких десятков лет сохраняет легко узнаваемый
+            дизайнерский стиль.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End content__wrap -->
+
+    <!-- Start brand-gallery -->
+    <section class="section carousel-section">
+      <div class="container">
+        <h2 class="mb-4">Галерея бренда</h2>
+        <div class="brand-gallery owl-carousel">
+          <a href="#"><img src="img/brand-gallery-img-01.jpg" alt=""></a>
+          <a href="#"><img src="img/brand-gallery-img-02.jpg" alt=""></a>
+          <a href="#"><img src="img/brand-gallery-img-03.jpg" alt=""></a>
+          <a href="#"><img src="img/brand-gallery-img-04.jpg" alt=""></a>
+          <a href="#"><img src="img/brand-gallery-img-01.jpg" alt=""></a>
+        </div>
+      </div>
+    </section>
+    <!-- End brand-gallery -->
+
+    <!-- Start brands -->
+    <section class="section brands mb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <a class="brand-logo m-auto" href="#"><img class="mx-auto img-fluid d-block" src="img/logo-marinarinaldi.png" alt=""></a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a class="brand-logo" href="#"><img class="mx-auto img-fluid d-block" src="img/logo-maxmara.png" alt=""></a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a class="brand-logo" href="#"><img class="mx-auto img-fluid d-block" src="img/logo-marella.png" alt=""></a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a class="brand-logo" href="#"><img class="mx-auto img-fluid d-block" src="img/logo-liujo.png" alt=""></a>
+          </div>
+      </div>
+    </section>
+    <!-- End brands -->
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__top">
+      <div class="page-footer__part menu">
+        <a class="footer-logo" href="#"><img width="185" height="33" src="img/logo-white.svg" alt=""></a>
+        <a href="#" class="btn btn-link">Связаться с директором</a>
+        <nav class="page-footer__nav">
+          <ul>
+            <li><a href="#">О магазине</a></li>
+            <li><a href="#">Одежда</a></li>
+            <li><a href="#">Для дома</a></li>
+            <li class="active"><a href="#">Гастраном</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="page-footer__part info">
+        <div class="page-footer__contacts">
+          <span class="item item__addr"><svg class="icon" width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-map"></use></svg>Курск, ул. Ленина, 12 </span>
+          <a class="item item__tel" href="tel:+74712700547"><svg class="icon" width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-phone"></use></svg> +7 (4712) 70-05-47 </a>
+          <a class="item item__mail" href="mailto:kursk.tsum@gmail.com"><svg class="icon" width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-email"></use></svg> kursk.tsum@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer__bottom">
+      <p class="small text-right">Разработано в <a href="#">Showbiz</a></p>
+    </div>
+  </footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/svg4everybody.js"></script>
+  <script src="js/ofi.js"></script>
+  <script src="js/isMobile.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
