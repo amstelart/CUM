@@ -5501,13 +5501,13 @@ a.text-dark:hover, a.text-dark:focus {
   margin-right: 4px;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-05398667847561305.png);
+  background-image: url(../img/sprite-0782320506257439.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-05398667847561305.png);
+  background-image: url(../img/sprite-0782320506257439.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -5897,6 +5897,12 @@ a.text-dark:hover, a.text-dark:focus {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 700;
+}
+.font-weight-semibold {
+  font-weight: 600;
+}
+.text-sm {
+  font-size: 14px;
 }
 .btn {
   font-weight: 500;
