@@ -5501,13 +5501,13 @@ a.text-dark:hover, a.text-dark:focus {
   margin-right: 4px;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-0015703525244389782.png);
+  background-image: url(../img/sprite-05398667847561305.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-0015703525244389782.png);
+  background-image: url(../img/sprite-05398667847561305.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -7334,6 +7334,11 @@ h1, h2, h3, h4, h5, h6,
   .text-sm-center {
     text-align: center !important;
   }
+  .category-card {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    max-width: 50%;
+  }
   .catalog-item {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 33.33333%;
@@ -8137,11 +8142,6 @@ h1, h2, h3, h4, h5, h6,
   }
   .main-card--order .main-card__content {
     padding-right: 220px;
-  }
-  .category-card {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    max-width: 50%;
   }
 }
 @media (min-width: 992px) {
@@ -9946,6 +9946,9 @@ h1, h2, h3, h4, h5, h6,
   .navbar-expand-xl > .container-fluid {
     padding-right: 0;
     padding-left: 0;
+  }
+  .category-title {
+    font-size: 24px;
   }
 }
 @media screen and (prefers-reduced-motion: reduce) {
