@@ -1,0 +1,36 @@
+<!--DEV
+
+Нужно убрать пробел между @-ами:
+
+@ @include('blocks/page-footer/page-footer.html')
+
+-->
+
+<footer class="page-footer">
+  <div class="page-footer__top">
+    <div class="page-footer__part menu">
+      <a class="footer-logo" href="#"><img width="185" height="33" src="img/logo-white.svg" alt=""></a>
+      <a href="#" class="btn btn-link">Связаться с директором</a>
+      <nav class="page-footer__nav">
+        <ul>
+          <li><a href="#">О магазине</a></li>
+          <li><a href="#">Одежда</a></li>
+          <li><a href="#">Для дома</a></li>
+          <li class="active"><a href="#">Гастраном</a></li>
+          <li><a href="#">Вакансии</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="page-footer__part info">
+      <div class="page-footer__contacts">
+        <span class="item item__addr"><svg class="icon" width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-map"></use></svg>Курск, ул. Ленина, 12 </span>
+        <a class="item item__tel" href="tel:+74712700547"><svg class="icon" width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-phone"></use></svg> +7 (4712) 70-05-47 </a>
+        <a class="item item__mail" href="mailto:kursk.tsum@gmail.com"><svg class="icon" width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-email"></use></svg> kursk.tsum@gmail.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer__bottom">
+    <p class="small text-right">Разработано в <a href="#">Showbiz</a></p>
+  </div>
+</footer>
