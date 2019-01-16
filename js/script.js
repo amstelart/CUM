@@ -310,6 +310,7 @@ $( document ).ready(function() {
     margin: 30,
     loop: true,
     dots: false,
+    center: false,
     responsive : {
       0 : {
         items: 2,

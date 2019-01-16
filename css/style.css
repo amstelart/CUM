@@ -5501,13 +5501,13 @@ a.text-dark:hover, a.text-dark:focus {
   margin-right: 4px;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-042742134955456446.png);
+  background-image: url(../img/sprite-06592214112281272.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-042742134955456446.png);
+  background-image: url(../img/sprite-06592214112281272.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -5924,6 +5924,10 @@ a.badge-info:hover, a.badge-info:focus {
   background: #acc4f3;
   color: #000;
 }
+.badge-lg {
+  padding: 6px 10px;
+  font-size: 14px;
+}
 .badge-group--vertical {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6209,6 +6213,7 @@ a.badge-info:hover, a.badge-info:focus {
 }
 .catalog-bages .badge {
   padding: 6px 10px;
+  font-size: 14px;
   margin-right: 5px;
 }
 .catalog-bages .badge .close {
@@ -6337,6 +6342,59 @@ a.badge-info:hover, a.badge-info:focus {
   max-width: 100%;
   height: auto;
   display: block;
+}
+.brand-gallery-item {
+  display: block;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.brand-gallery-item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.brand-gallery-item:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: url("../img/icon-more.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 45px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.brand-gallery-item:hover:before, .brand-gallery-item:focus:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+}
+.brand-gallery-item:hover:after, .brand-gallery-item:focus:after {
+  opacity: 1;
+}
+.brands {
+  background: #ecebed;
+  padding: 12px 0;
+}
+.brand-logo {
+  opacity: 0.3;
+  display: block;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.brand-logo:hover, .brand-logo:focus {
+  opacity: 1;
 }
 .brand-logo img {
   max-width: 100%;
