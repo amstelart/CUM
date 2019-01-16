@@ -5501,13 +5501,13 @@ a.text-dark:hover, a.text-dark:focus {
   margin-right: 4px;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-08974901028836593.png);
+  background-image: url(../img/sprite-04975388998859509.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-08974901028836593.png);
+  background-image: url(../img/sprite-04975388998859509.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -6215,7 +6215,8 @@ a.badge-info:hover, a.badge-info:focus {
 .parallax-bg {
   background-image: url("../img/bg-logo.svg");
   background-repeat: no-repeat;
-  background-position: top 155px center;
+  background-position: 50% 25%;
+  background-attachment: fixed;
 }
 .catalog-bages {
   margin-bottom: 30px;

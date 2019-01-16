@@ -266,7 +266,7 @@ document.addEventListener('DOMContentLoaded', function(){
     var a = $(document).height() - $(window).height(),
         b = a - (this.offset().top + this.height());
 
-    this.offset().top < a && (b = 0);
+    this.offset().top < a && (b = 20);
 
     var c = (this.offset().top + this.height());
 
