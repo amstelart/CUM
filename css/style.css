@@ -5501,13 +5501,13 @@ a.text-dark:hover, a.text-dark:focus {
   margin-right: 4px;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-06592214112281272.png);
+  background-image: url(../img/sprite-06193320787424414.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-06592214112281272.png);
+  background-image: url(../img/sprite-06193320787424414.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -5904,6 +5904,15 @@ h1, h2, h3, h4, h5, h6,
 .text-sm {
   font-size: 14px;
 }
+.link {
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+.link:hover, .link:focus {
+  text-decoration: none;
+}
 .btn {
   font-weight: 500;
 }
@@ -5950,19 +5959,19 @@ a.badge-info:hover, a.badge-info:focus {
   width: 100%;
   height: 1px;
   background: #ebebeb;
-  margin: 35px 0;
+  margin: 25px 0 40px;
 }
 .page-heading {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .carousel .carousel-inner {
   border-radius: 6px;
 }
 .page-content {
-  padding-top: 60px;
+  padding-top: 82px;
 }
 .page-content__wrap {
-  margin: 50px 0;
+  margin: 45px 0 50px;
 }
 .h-100vh {
   height: 100vh;
@@ -6410,6 +6419,7 @@ a.badge-info:hover, a.badge-info:focus {
 }
 .vacancy-item {
   margin-bottom: 25px;
+  color: inherit;
 }
 .vacancy-title {
   font-size: 14px;
