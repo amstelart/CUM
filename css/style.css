@@ -5501,13 +5501,13 @@ a.text-dark:hover, a.text-dark:focus {
   margin-right: 4px;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-08009930453608038.png);
+  background-image: url(../img/sprite-05024108941844248.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-08009930453608038.png);
+  background-image: url(../img/sprite-05024108941844248.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -6351,6 +6351,22 @@ a.badge-info:hover, a.badge-info:focus {
   max-width: 100%;
   height: auto;
   display: block;
+}
+.brand-prev {
+  display: block;
+  overflow: hidden;
+}
+.brand-prev img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.brand-prev:hover img, .brand-prev:focus img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .brand-gallery-item {
   display: block;
