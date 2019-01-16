@@ -250,6 +250,44 @@ document.addEventListener('DOMContentLoaded', function(){
     });
 });
 
+// bgscroll.js
+
+(function($) {
+  $.fn.bgscroll = function(options) {
+
+    var x = $.extend({
+      bgpositionx: 50,
+      direction: "bottom",
+      debug: !1,
+      min: 0,
+      max: 100
+    }, options);
+
+    var a = $(document).height() - $(window).height(),
+        b = a - (this.offset().top + this.height());
+
+    this.offset().top < a && (b = 0);
+
+    var c = (this.offset().top + this.height());
+
+    if ($(window).scrollTop() > b && $(window).scrollTop() < c) {
+      var d = ($(window).scrollTop() - b) / (c - b) * 100;
+
+      "top" == x.direction && (d = 100 - d),
+          d > x.max && (d = x.max),
+          d < x.min && (d = x.min);
+
+      if (x.debug){
+        console.log('Element background position: ' + d + ' %');
+      }
+    }
+
+    return this.css({
+      backgroundPosition: x.bgpositionx + '% ' + d + '%'
+    });
+  };
+}(jQuery));
+
 // Если на проекте jQuery
 $( document ).ready(function() {
 
@@ -266,42 +304,6 @@ $( document ).ready(function() {
       }
     });
   };
-
-  // $("#main-carousel").owlCarousel({
-  //   items: 3,
-  //   nav: true,
-  //   loop: true,
-  //   autoplay: true,
-  //   margin: 30,
-  //   dots: true,
-  //   navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>', '<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
-  //   center: false,
-  //   responsive : {
-  //     0 : {
-  //       items: 1,
-  //       nav: true,
-  //       loop: true,
-  //       center: true,
-  //     },
-  //     480 : {
-  //       items: 2,
-  //     },
-  //     768 : {
-  //       items: 2,
-  //     },
-  //     992 : {
-  //       items: 2,
-  //     },
-  //     1200 : {
-  //       items: 3,
-  //       center: true
-  //     },
-  //     1800 : {
-  //       items: 3,
-  //       center: true
-  //     }
-  //   }
-  // });
 
   $(".brand-gallery").owlCarousel({
     items: 4,
@@ -337,3 +339,13 @@ $( document ).ready(function() {
   });
 
 });
+
+$(window).scroll(function(){
+  $('.parallax-bg').bgscroll({
+    direction: 'bottom', // направление bottom или top
+    bgpositionx: 50, // x позиция фонового изображения, от 0 до 100, размерность в %, 50 - означает по центру
+    debug: false, // Режим отладки
+    min:0, // минимальное положение (в %) на которое может смещаться фон
+    max:100 // максимальное положение (в %) на которое может смещаться фон
+  });
+})
