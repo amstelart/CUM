@@ -5501,13 +5501,13 @@ a.text-dark:hover, a.text-dark:focus {
   margin-right: 4px;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-05764154964517136.png);
+  background-image: url(../img/sprite-03369693617370808.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-05764154964517136.png);
+  background-image: url(../img/sprite-03369693617370808.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -6495,6 +6495,77 @@ a.badge-info:hover, a.badge-info:focus {
 .subscribe .form-control:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+.page-about__section {
+  padding: 30px 0;
+}
+.page-about__title {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.about-intro {
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+.about-intro:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+.about-intro .page-about__title {
+  color: #fff;
+  position: relative;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.about-priority {
+  padding-bottom: 0;
+}
+.priority-card {
+  margin-bottom: 30px;
+}
+.priority-card__img {
+  width: 100%;
+}
+.priority-card__body {
+  background: #d4e3ff;
+  text-align: center;
+  padding: 1.6rem 2rem;
+}
+.priority-card__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.priority-card__text {
+  font-size: 13px;
+  line-height: 1.2;
+}
+.about-video {
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  min-height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (min-width: 576px) {
   .container {
