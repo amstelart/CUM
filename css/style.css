@@ -5501,13 +5501,13 @@ a.text-dark:hover, a.text-dark:focus {
   margin-right: 4px;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-03369693617370808.png);
+  background-image: url(../img/sprite-024015156859571718.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-03369693617370808.png);
+  background-image: url(../img/sprite-024015156859571718.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -6534,6 +6534,8 @@ a.badge-info:hover, a.badge-info:focus {
 }
 .priority-card {
   margin-bottom: 30px;
+  border-radius: 4px;
+  overflow: hidden;
 }
 .priority-card__img {
   width: 100%;
