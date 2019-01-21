@@ -5458,10 +5458,10 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 30px;
 }
 .page-footer__bottom {
-  color: #363636;
+  color: #656565;
 }
 .page-footer__bottom a {
-  color: #363636;
+  color: #656565;
 }
 .page-footer__nav {
   margin-top: 30px;
@@ -5501,13 +5501,13 @@ a.text-dark:hover, a.text-dark:focus {
   margin-right: 4px;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-047540427427636844.png);
+  background-image: url(../img/sprite-05764154964517136.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-047540427427636844.png);
+  background-image: url(../img/sprite-05764154964517136.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -5923,10 +5923,15 @@ h1, h2, h3, h4, h5, h6,
 .btn-link:hover, .btn-link:focus {
   text-decoration: none;
 }
+.btn-light:hover, .btn-light:focus {
+  color: #212529;
+  background-color: #d4e3ff;
+  border-color: #d4e3ff;
+}
 .badge-info {
   background: #d4e3ff;
   color: #000;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   margin-bottom: 10px;
 }
@@ -5964,6 +5969,7 @@ a.badge-info:hover, a.badge-info:focus {
 }
 .page-heading {
   margin-bottom: 20px;
+  font-weight: 500;
 }
 .carousel .carousel-inner {
   border-radius: 6px;
@@ -6024,7 +6030,6 @@ a.badge-info:hover, a.badge-info:focus {
 .custom-nav .navbar-nav .nav-link {
   color: #000;
   font-weight: 700;
-  text-transform: uppercase;
 }
 .custom-nav .navbar-nav .nav-link:hover, .custom-nav .navbar-nav .nav-link:focus {
   color: #6587c6;
@@ -6485,14 +6490,11 @@ a.badge-info:hover, a.badge-info:focus {
   background-color: #fce1ca;
   border-color: #fce1ca;
   outline: none;
+  padding: 0.75rem 1.3rem;
 }
 .subscribe .form-control:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
-}
-.subscribe .btn {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 @media (min-width: 576px) {
   .container {
