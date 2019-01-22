@@ -5501,13 +5501,13 @@ a.text-dark:hover, a.text-dark:focus {
   margin-right: 4px;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-05134327287599174.png);
+  background-image: url(../img/sprite-03584152424200193.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-05134327287599174.png);
+  background-image: url(../img/sprite-03584152424200193.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -6519,7 +6519,6 @@ a.badge-info:hover, a.badge-info:focus {
   background-repeat: no-repeat;
   position: relative;
   padding-top: 60px;
-  height: 520px;
   padding-bottom: 90px;
 }
 .about-intro:before {
@@ -6537,7 +6536,25 @@ a.badge-info:hover, a.badge-info:focus {
   position: relative;
   font-size: 36px;
   font-weight: 500;
-  margin-bottom: 0;
+  margin-bottom: 40px;
+}
+.timeline-wrap {
+  position: relative;
+}
+.timeline-wrap .nav-pills {
+  background: #f37526;
+}
+.timeline-wrap .nav-pills .nav-link {
+  color: #fff;
+}
+.timeline-wrap .nav-pills .nav-link.active {
+  background: #d4e3ff;
+  color: #000;
+}
+.timeline-wrap .tab-content {
+  background: #fff;
+  padding: 2rem;
+  min-height: 300px;
 }
 .about-priority {
   padding-top: 60px;
