@@ -384,13 +384,13 @@ $('#myTabs .nav-link').on('show.bs.tab', function (e) {
 
     if ($currentTab.next().length === 0) {
         $nextButton.prop('disabled', true);
-    } elseif ($nextButton.prop('disabled')) {
+    } else if ($nextButton.prop('disabled')) {
         $nextButton.prop('disabled', false);
     }
 
     if ($currentTab.prev().length === 0) {
         $previousButton.prop('disabled', true);
-    } elseif ($previousButton.prop('disabled')) {
+    } else if ($previousButton.prop('disabled')) {
         $previousButton.prop('disabled', false);
     }
 });
