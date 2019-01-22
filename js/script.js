@@ -383,6 +383,7 @@ $('#myTabs .nav-link').on('show.bs.tab', function(e) {
   } else if ($nextButton.prop('disabled')) {
     $nextButton.attr('disabled', false);
   }
+  console.log(e)
 
   if ($currentTab.prev().length === 0) {
     $previousButton.attr('disabled', true);
