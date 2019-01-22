@@ -390,4 +390,7 @@ $('#myTabs .nav-link').on('show.bs.tab', function(e) {
     $previousButton.prop('disabled', false);
   }
 });
-$('#myTabs .nav-link.active').tab('show');
+
+$(function() {
+  $('#myTabs .nav-link.active').tab('show');
+});
