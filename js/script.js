@@ -250,6 +250,7 @@ document.addEventListener('DOMContentLoaded', function(){
     });
 });
 
+
 // bgscroll.js
 
 (function($) {
@@ -336,6 +337,10 @@ $( document ).ready(function() {
         items: 4,
       }
     }
+  });
+
+  $().timelinr({
+    arrowKeys: 'true'
   });
 
 });
