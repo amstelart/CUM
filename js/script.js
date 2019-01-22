@@ -379,14 +379,14 @@ $('#myTabs .nav-link').on('show.bs.tab', function(e) {
   var $previousButton = $('#prev-year');
 
   if ($currentTab.next().length === 0) {
-    $nextButton.prop('disabled', true);
+    $nextButton.attr('disabled', 'disabled');
   } else if ($nextButton.prop('disabled')) {
-    $nextButton.prop('disabled', false);
+    $nextButton.attr('disabled', false);
   }
 
   if ($currentTab.prev().length === 0) {
-    $previousButton.prop('disabled', true);
+    $previousButton.attr('disabled', true);
   } else if ($previousButton.prop('disabled')) {
-    $previousButton.prop('disabled', false);
+    $previousButton.attr('disabled', false);
   }
 });
