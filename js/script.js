@@ -339,10 +339,6 @@ $( document ).ready(function() {
     }
   });
 
-  $().timelinr({
-    arrowKeys: 'true'
-  });
-
 });
 
 $(window).scroll(function(){
@@ -356,41 +352,41 @@ $(window).scroll(function(){
 })
 
 $('#prev-year').on('click', function(e) {
-    e.preventDefault();
+  e.preventDefault();
 
-    $('#myTabs')
-        .find('.nav-link.active')
-        .closest('.nav-item')
-        .prev()
-        .find('.nav-link')
-        .tab('show');
+  $('#myTabs')
+    .find('.nav-link.active')
+    .closest('.nav-item')
+    .prev()
+    .find('.nav-link')
+    .tab('show');
 });
 
 $('#next-year').on('click', function(e) {
-    e.preventDefault();
+  e.preventDefault();
 
-    $('#myTabs')
-        .find('.nav-link.active')
-        .closest('.nav-item')
-        .next()
-        .find('.nav-link')
-        .tab('show');
+  $('#myTabs')
+    .find('.nav-link.active')
+    .closest('.nav-item')
+    .next()
+    .find('.nav-link')
+    .tab('show');
 });
 
-$('#myTabs .nav-link').on('show.bs.tab', function (e) {
-    var $currentTab = $(e.target).closest('.nav-item');
-    var $nextButton = $('#next-year');
-    var $previousButton = $('#prev-year');
+$('#myTabs .nav-link').on('show.bs.tab', function(e) {
+  var $currentTab = $(e.target).closest('.nav-item');
+  var $nextButton = $('#next-year');
+  var $previousButton = $('#prev-year');
 
-    if ($currentTab.next().length === 0) {
-        $nextButton.prop('disabled', true);
-    } else if ($nextButton.prop('disabled')) {
-        $nextButton.prop('disabled', false);
-    }
+  if ($currentTab.next().length === 0) {
+    $nextButton.prop('disabled', true);
+  } else if ($nextButton.prop('disabled')) {
+    $nextButton.prop('disabled', false);
+  }
 
-    if ($currentTab.prev().length === 0) {
-        $previousButton.prop('disabled', true);
-    } else if ($previousButton.prop('disabled')) {
-        $previousButton.prop('disabled', false);
-    }
+  if ($currentTab.prev().length === 0) {
+    $previousButton.prop('disabled', true);
+  } else if ($previousButton.prop('disabled')) {
+    $previousButton.prop('disabled', false);
+  }
 });
