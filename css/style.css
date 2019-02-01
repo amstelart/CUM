@@ -493,8 +493,8 @@ mark,
   line-height: 1;
 }
 .figure-caption {
-  font-size: 90%;
-  color: #6c757d;
+  font-size: 14px;
+  color: #aeaeae;
 }
 code {
   font-size: 87.5%;
@@ -5501,13 +5501,13 @@ a.text-dark:hover, a.text-dark:focus {
   margin-right: 4px;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-020523050511927154.png);
+  background-image: url(../img/sprite-03422601125818747.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-020523050511927154.png);
+  background-image: url(../img/sprite-03422601125818747.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -5983,6 +5983,7 @@ a.badge-info:hover, a.badge-info:focus {
   margin: 25px 0 40px;
 }
 .page-heading {
+  font-size: 36px;
   margin-bottom: 20px;
   font-weight: 500;
 }
@@ -6650,6 +6651,32 @@ a.badge-info:hover, a.badge-info:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.content-box {
+  font-size: 0.9rem;
+  line-height: 26px;
+}
+.content-box p {
+  margin-bottom: 26px;
+}
+.content-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+.content-box ul li {
+  position: relative;
+  padding-left: 19px;
+  margin-bottom: 5px;
+}
+.content-box ul li:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f37526;
+  position: absolute;
+  top: 11px;
+  left: 0;
 }
 @media (min-width: 576px) {
   .container {
