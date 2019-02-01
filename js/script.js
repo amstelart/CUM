@@ -394,3 +394,5 @@ $('#myTabs .nav-link').on('show.bs.tab', function(e) {
 $(function() {
   $('#myTabs .nav-link.active').tab('show');
 });
+
+new WOW().init();
