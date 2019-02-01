@@ -5501,13 +5501,13 @@ a.text-dark:hover, a.text-dark:focus {
   margin-right: 4px;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-03422601125818747.png);
+  background-image: url(../img/sprite-024321241804059324.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-03422601125818747.png);
+  background-image: url(../img/sprite-024321241804059324.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -5893,6 +5893,15 @@ a.text-dark:hover, a.text-dark:focus {
 .close > span:after {
   -webkit-transform: rotate3d(0, 0, 1, -45deg);
           transform: rotate3d(0, 0, 1, -45deg);
+}
+.modal .modal-header {
+  border-bottom: none;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.modal .modal-title {
+  font-weight: 400;
 }
 @font-face {
   font-family: 'Gabriola';
@@ -9267,6 +9276,15 @@ a.badge-info:hover, a.badge-info:focus {
   .burger {
     display: none;
   }
+  .modal .modal-title {
+    font-size: 36px;
+  }
+  .modal .modal-content {
+    padding: 2rem;
+  }
+  .modal .modal-body {
+    padding-right: 200px;
+  }
   .h-100vh {
     height: 780px;
   }
@@ -10286,6 +10304,9 @@ a.badge-info:hover, a.badge-info:focus {
   .navbar-expand-xl > .container-fluid {
     padding-right: 0;
     padding-left: 0;
+  }
+  .modal .modal-header .close {
+    margin: 0;
   }
   .category-title {
     font-size: 24px;
